@@ -6,14 +6,13 @@ import (
 	"io"
 	"net/http"
 	"os"
-	"sort"
 	"strings"
 )
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
-		f := fib()
+		f := fib() 
 
 		res := &response{Message: "Hello World"}
 
